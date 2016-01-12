@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="functions.js"></script>
+  <style>
+   table, th, td 
+   {
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+   th, td 
+   {
+    padding: 5px;
+   }
+  </style>
+ </head>
+
+ <body>
+  <form>
+   Model Files:<br>
+   Model (A): <input type="file" id="model_path">
+   <br>
+   DVF - USG (B): <input type="file" id="USG_DVF_path">
+   <br>
+   DVF - Aero Report (C): <input type="file" id="Aero_DVF_path">
+  </form> 
+
+  <input type="submit" value="Open files" onclick="open_files('model_path', 'USG_DVF_path', 'Aero_DVF_path');"/>   
+  </br>
+  <div id="clin_input_table">
+
+   <!--<object type="text/html" data="innerhtml.html">
+    <p>backup content</p>
+   --></object>
+
+  </div>
+ 
+ </body>
+</html>
